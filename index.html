@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trivia Quiz</title>
+        <link rel="stylesheet" href="styles.css"> <!--links to the css file -->
+    </head>
+    <body>
+        <div id="start-screen">
+            <h1>Welcome To A Trivia Quiz</h1>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <div id="question-screen" class="hidden" >
+        <p>Try Out these questions</p>
+        </div>
+
+        <div id="scoreboard" class="hidden">
+            <h2>Your Score: <span id="score"></span> out of <span id="total-questions"></span></h2>
+            <button id="restart-btn">Restart Quiz</button>
+          </div>
+          
+          <div id="notification" class="notification"></div>
+
+        <script src="index.js"></script> <!-- links to the js file -->
+
+    </body>
+</html>
