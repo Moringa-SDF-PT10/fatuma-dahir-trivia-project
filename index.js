@@ -157,7 +157,15 @@ function showScore() {
     scoreboard.classList.add("hidden"); // Hides the scoreboard
     startScreen.classList.remove("hidden"); // Shows the start screen again
   });
+  
+  //show a dialog that prevents a user to accidently leave in the middle of a quiz
+  window.addEventListener("beforeunload", (e) => {
+    e.preventDefault();
+    e.returnValue = ""; 
+  });
+  
 
+  
 
 
   

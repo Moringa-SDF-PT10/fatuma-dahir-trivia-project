@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(135deg, #e6e2d3, #cfd8dc);
+  background: linear-gradient(135deg, #5c9ec992, #a1a8aba9);
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -30,7 +30,13 @@ body {
   display: block;
 }
 
-h1, h2, h3 {
+h1{
+    font-family: 'Playfair Display', serif;
+    color: hsl(192, 22%, 95%);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+h2, h3 {
   font-family: 'Playfair Display', serif;
   color: #2e2e2e;
   margin-bottom: 1.5rem;
@@ -63,7 +69,7 @@ input[type="radio"] {
 
 label {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 1remto;
   padding: 0.6rem 1rem;
   background-color: #f2f0eb;
   border: 1px solid #d6cec2;
@@ -134,4 +140,26 @@ label:hover {
   .notification.show {
     opacity: 1;
   }
+ 
+  #start-screen {
+    background-image: url('./assets/quizImage.jpg'); 
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    color: white;
+    position: relative;
+  }
+  
+  #start-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  
   
